@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frogger Game</title>
+    <link rel="stylesheet" href="css/Game.css">
+</head>
+<body>
+	 
+
+	<div id="selectionPopup">
+		<h1>Welcome To My Frogger Game!</h1>
+
+		<hr>
+			<h1>Select Avatar</h1>
+			<img id="avatar0" class="avatarImg" onclick="avatarClick(this.id, 0)" src="images/char-boy.png" />
+			<img id="avatar1" class="avatarImg" onclick="avatarClick(this.id, 1)" src="images/char-cat-girl.png" />
+			<img id="avatar2" class="avatarImg" onclick="avatarClick(this.id, 2)" src="images/char-horn-girl.png" />
+			<img id="avatar3" class="avatarImg" onclick="avatarClick(this.id, 3)" src="images/char-pink-girl.png" />
+			<img id="avatar4" class="avatarImg" onclick="avatarClick(this.id, 4)" src="images/char-princess-girl.png" />
+		<hr>
+			<button id="startGame" class="button" onclick="startClick();">Start Game</button>
+		
+	</div>
+
+	<div id="gameOverPopup">
+    	<img class="go" src="images/go.jpg" alt="Game Over">
+    	<hr>
+	    	<div id="gameSummary">
+	    		<h1>You Scored<h1>
+	    		<h1 id="pointsSummary">0</h1>
+	    		<h1>Points</h1>
+	    	</div>
+	    <hr>
+	    	<h2>Press Play Again!!</h2>
+	    	<button id="resetButton" class="button" onclick="history.go(0)">play Again</button>
+	
+    </div>
+
+	<div class="starts">
+		<ul>
+	        <li class="level"></li>
+	        <li class="score"></li>
+	        <li class="lives"></li>
+	    </ul>
+	</div>
+
+	
+    <script src="js/ArcadeGameResources.js"></script>
+    <script src="js/ArcadeGame.js"></script>
+    <script src="js/ArcadeGameEngine.js"></script>
+
+    
+</body>
+</html>
